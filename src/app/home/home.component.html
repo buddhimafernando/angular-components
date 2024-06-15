@@ -4,7 +4,7 @@
     Click Me
 </button>
 
-<div *ngFor="let boat of boats">
+<div *ngFor="let boat of boats | async">
     <h3 [ngClass]="{
         'red': boat.name === 'Starfire',
         'green': boat.name === 'Oracle',
@@ -13,5 +13,5 @@
     </h3>
 
     <img [src]="boat.img" appMagnifier>
-    <p>Built in {{boat.year}}</p>
+    <p>Built in {{boat.year | year}}</p>
 </div>

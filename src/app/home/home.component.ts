@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { VERSION } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ export class HomeComponent {
   clicked = false;
   title = `Angular ${VERSION.full} is rad!`;
 
-  boats = [
+  boats = of([
     {
     name: 'Starfire',
     year: 1973,
@@ -21,7 +22,7 @@ export class HomeComponent {
     year: 2001,
     img: 'assets/yatch.png'
   }
-];
+]);
 
   handleClick(){
     this.clicked = true;
