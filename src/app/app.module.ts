@@ -12,6 +12,8 @@ import {MatTableModule} from '@angular/material/table';
 import { TableComponent } from './table/table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     YearPipe,
     TableComponent,
     NavbarComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatToolbarModule,
     MatIconModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
