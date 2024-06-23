@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import {MatSelectModule} from '@angular/material/select';
+import { InputSectionComponent } from './input-section/input-section.component';
+import { SampleComponent } from './sample/sample.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import {MatSelectModule} from '@angular/material/select';
     TableComponent,
     NavbarComponent,
     DropdownComponent,
+    SampleComponent,
   ],
   imports: [
     BrowserModule,
